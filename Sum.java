@@ -5,7 +5,8 @@ public class Sum {
 
         //sum of 2nd row
         for(int j=0; j<nums[0].length;j++){
-            sum += nums
+            sum += nums[1][j];
         }
+        System.out.println("Sum is : "+sum);
     }
 }
