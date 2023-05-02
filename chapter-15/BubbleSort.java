@@ -1,7 +1,7 @@
 
 public class BubbleSort {
     //Bubble Sort for Descending Order
-    public static void BubbleSort(int arr[]) {
+    public static void Bubblesort(int arr[]) {
         for (int turn = 0; turn < arr.length-1; turn++) {
             for (int j = 0; j < arr.length-1-turn; j++) {
                 //bubble sort for decending order change greater than sign to change to ascending order
@@ -24,7 +24,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int arr[] = { 3, 6, 2, 1,8, 7, 4, 5, 3,1 };
-        BubbleSort(arr);
+        Bubblesort(arr);
         PrintArray(arr);
     }
 }

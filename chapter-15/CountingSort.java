@@ -1,7 +1,7 @@
 
 public class CountingSort {
     // Counting Sort for descending Order
-    public static void CountingSort(int arr[]) {
+    public static void countingsort(int arr[]) {
         int largest = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             largest = Math.max(largest, arr[i]);
@@ -32,7 +32,7 @@ public class CountingSort {
 
     public static void main(String[] args) {
         int arr[] = { 3, 6, 2, 1, 8, 7, 4, 5, 3, 1 };
-        CountingSort(arr);
+        countingsort(arr);
         PrintArray(arr);
     }
 

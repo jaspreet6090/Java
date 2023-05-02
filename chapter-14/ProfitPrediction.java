@@ -1,4 +1,4 @@
-import java.util.*;;
+
 
 public class ProfitPrediction {
     public static int maxProfit (int prices[]){

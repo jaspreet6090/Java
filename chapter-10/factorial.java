@@ -7,7 +7,7 @@ public class factorial {
 
         System.out.println("Enter a Number you want Factorial of it: ");
         number = sc.nextInt();
-
+    
         if(number==0 || number == 1){
             System.out.println("Factorial : "+fact);
         } else {
@@ -18,4 +18,5 @@ public class factorial {
         }
 
     }
+    
 }

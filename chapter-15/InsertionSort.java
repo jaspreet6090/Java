@@ -1,7 +1,7 @@
 
 public class InsertionSort {
     //Insertion Sort for Descending Sort
-    public static void InsertionSort(int arr[]){
+    public static void insertionsort(int arr[]){
         for(int i=1;i<arr.length;i++){
             int curr = arr[i];
             int prev = i-1;
@@ -25,7 +25,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int arr[] = { 3, 6, 2, 1,8, 7, 4, 5, 3,1 };
-        InsertionSort(arr);
+        insertionsort(arr);
         PrintArray(arr);
     }
 

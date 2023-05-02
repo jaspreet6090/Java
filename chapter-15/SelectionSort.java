@@ -1,7 +1,7 @@
 
 public class SelectionSort {
     //Selection Sort for Descending Order
-    public static void SelectionSort (int arr[]){
+    public static void selectionsort (int arr[]){
         for(int i=0; i<arr.length-1;i++){
             int minPos =i;
             for(int j=i+1;j<arr.length;j++){
@@ -25,7 +25,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int arr[] = { 3, 6, 2, 1,8, 7, 4, 5, 3,1 };
-        SelectionSort(arr);
+        selectionsort(arr);
         PrintArray(arr);
     }
 }

@@ -1,4 +1,4 @@
-import java.sql.PseudoColumnUsage;
+
 
 public class average {
 
