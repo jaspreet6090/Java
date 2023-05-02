@@ -1,6 +1,6 @@
-public class palindrome {
+public class isPalindrome {
 
-    public static void isPalindrome (int orignal){
+    public static void Palindrome (int orignal){
          
         int revnum = 0;
         int temp = orignal;
@@ -19,6 +19,6 @@ public class palindrome {
 
     public static void main(String[] args) {
         int Number = 141414;
-        isPalindrome(Number);
+        Palindrome(Number);
     }
 }
