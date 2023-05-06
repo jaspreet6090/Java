@@ -1,2 +1,1 @@
-      Queen q = new Queen();
-        King k = new King();
+student3.schoolName = "DPS";
