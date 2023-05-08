@@ -1,1 +1,0 @@
-student3.schoolName = "DPS";
