@@ -5,8 +5,12 @@ public class Power  {
         if(n == 0 ){
             return 1;
         }
+        	
+        // int halfPowerSq = optimizedPower(a, n/2) * optimizedPower(a, n/2);
+        //or to make more efficient
 
-        int halfPowerSq = optimizedPower(a, n/2) * optimizedPower(a, n/2);
+        int halfPower = optimizedPower(a, n/2);
+        int halfPowerSq = halfPower * halfPower;
 
         // n is odd 
         if(n%2 != 0) {
