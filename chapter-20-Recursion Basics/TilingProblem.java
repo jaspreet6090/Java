@@ -1,8 +1,9 @@
 public class TilingProblem {
     public static int tilingPrblm(int n){ // 2 x n (floor size)
         //base case 
-        if(n == 0 || n == 1) 
+        if(n == 0 || n == 1) {
         return 1;
+        }
 
         //kaam
         //Vertical choice
