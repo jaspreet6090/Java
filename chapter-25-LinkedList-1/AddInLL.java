@@ -46,6 +46,19 @@ public class AddInLL {
         }
         System.out.println("null");
     }
+
+    public void addAtIndex(int data,int index){
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i =0;
+        while(i < index-1 ){
+            temp = temp.next;
+            i++;
+        } 
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+    
     public static void main(String[] args) {
         AddInLL ll = new AddInLL();
         ll.addFirst(2);
@@ -53,6 +66,8 @@ public class AddInLL {
         ll.addLast(3);
         ll.addLast(4);
 
+        ll.printLL();
+        ll.addAtIndex(20, 2);
         ll.printLL();
     }
 }
