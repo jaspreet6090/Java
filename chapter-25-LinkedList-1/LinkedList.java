@@ -107,6 +107,27 @@ public class LinkedList {
         return val;
     }
 
+    //Iterative Search 
+    public int itrSearch(int key){
+        Node temp = head;
+        if(size == 0){
+            System.out.println("LL is empty");
+            return -1;
+        } else if(size == 1){ //head=tail
+            return 0;
+        }
+        int i = 0;
+        while(temp != null){
+           if( temp.data == key){
+                return i;
+           }
+           temp = temp.next;
+            i++;
+
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.addFirst(2);
@@ -115,9 +136,11 @@ public class LinkedList {
         ll.addLast(4);
 
         ll.printLL();
-        ll.addAtIndex(20, 2);
-        ll.printLL();
-        System.out.println(size);
+        // ll.addAtIndex(20, 2);
+        // ll.printLL();
+        // System.out.println(size);
+        int Index = ll.itrSearch(3);
+        System.out.println(Index);
 
     }
 }
