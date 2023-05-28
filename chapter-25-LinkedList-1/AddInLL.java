@@ -10,10 +10,12 @@ public class AddInLL {
     }
     public static Node head;
     public static Node  tail;
+    public static int size;
 
     public void addFirst (int data) {
         //step 1 - create a new node
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = tail = newNode;
             return;
@@ -27,6 +29,7 @@ public class AddInLL {
 
     public void addLast (int data) {
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = tail = newNode;
             return;
@@ -50,9 +53,10 @@ public class AddInLL {
     public void addAtIndex(int data,int index){
         if(index == 0){
             addFirst(data);
-            return;
+            return;  
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i =0;
         while(i < index-1 ){
@@ -73,5 +77,6 @@ public class AddInLL {
         ll.printLL();
         ll.addAtIndex(20, 2);
         ll.printLL();
+        System.out.println(size);
     }
 }
