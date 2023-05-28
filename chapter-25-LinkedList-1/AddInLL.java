@@ -48,6 +48,10 @@ public class AddInLL {
     }
 
     public void addAtIndex(int data,int index){
+        if(index == 0){
+            addFirst(data);
+            return;
+        }
         Node newNode = new Node(data);
         Node temp = head;
         int i =0;
@@ -58,7 +62,7 @@ public class AddInLL {
         newNode.next = temp.next;
         temp.next = newNode;
     }
-    
+
     public static void main(String[] args) {
         AddInLL ll = new AddInLL();
         ll.addFirst(2);
