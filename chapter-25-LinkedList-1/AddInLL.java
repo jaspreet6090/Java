@@ -34,12 +34,25 @@ public class AddInLL {
         tail.next = newNode;
         tail = newNode;  
     }
-    
+    public void printLL(){ //O(n)
+        if(head == null){
+            System.out.println("LL is empty");
+            return;
+        }
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+"->");
+        temp = temp.next;
+        }
+        System.out.println("null");
+    }
     public static void main(String[] args) {
         AddInLL ll = new AddInLL();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(3);
         ll.addLast(4);
+
+        ll.printLL();
     }
 }
