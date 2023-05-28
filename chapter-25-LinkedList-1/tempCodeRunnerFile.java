@@ -1,1 +1,0 @@
-newNode.next = temp.next;
