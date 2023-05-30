@@ -135,7 +135,7 @@ public class DoubleLL {
 
        // dll.reverse();
 
-        dll.printDll();
+        //dll.printDll();
         
     }
 }
