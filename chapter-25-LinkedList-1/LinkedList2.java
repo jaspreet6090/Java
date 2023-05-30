@@ -142,20 +142,63 @@ public class LinkedList2 {
         return merge(newLeft , newRight);
 
     }
+
+    public void zigZag(){
+        //step1 find mid
+        Node slow = head;
+        Node fast = head.next;
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+
+        }
+        Node mid = slow;
+
+        //step 2 reverse 2nd half
+        Node curr = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+
+        while ( curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node left = head;
+        Node right = prev;
+        Node nextL, nextR;
+
+        //step3 - Zigzag merge
+        while(left != null && right != null){
+            nextL = left.next;
+            left.next = right;
+            nextR = right.next;
+            right.next = nextL;
+
+            //update
+            left = nextL;
+            right = nextR;
+
+        }
+    }
     public static void main(String[] args) {
         LinkedList2 ll = new LinkedList2();
-        ll.addFirst(1);
-        ll.addFirst(2);
-        ll.addFirst(3);
-        ll.addFirst(4);
         ll.addFirst(5);
+        ll.addFirst(4);
+        ll.addFirst(3);
+        ll.addFirst(2);
+        ll.addFirst(1);
         //5->4->3->2->1->null
         // System.out.println(isCycle());
         // removeCycle();
         // System.out.println(isCycle());
         ll.printLL();
-       ll.head = ll.mergeSort(ll.head);
-       ll.printLL();
+        //ll.head = ll.mergeSort(ll.head);
+        ll.zigZag();
+        ll.printLL();
        
         
     }
