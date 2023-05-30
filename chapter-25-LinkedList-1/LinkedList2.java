@@ -1,5 +1,5 @@
 public class LinkedList2 {
-    public class Node {
+    static public class Node {
         int data;
         Node next;
 
@@ -58,7 +58,7 @@ public class LinkedList2 {
 
     public static void main(String[] args) {
         
-        head = new Node();
-
+        head = new Node(1);
+        
     }
 }
