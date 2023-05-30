@@ -42,6 +42,32 @@ public class DoubleLL {
         tail = newNode;
     }
 
+    //remove first
+    public int removeFirst(){
+        if(size == 0){
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        }else if(size == 1 ){
+            int val = head.data;
+            head =  tail = null;
+            size = 0;
+            return val;
+        }
+        
+        int val = head.data;
+         head = head.next;
+        head.prev = null;
+       
+        size--;
+        return val;
+    }
+
+    //remove last 
+    public int removeLast(){
+        int val = size;
+        return val; 
+    }
+
     //print dll
     public void printDll(){
         if(head == null){
@@ -65,6 +91,8 @@ public class DoubleLL {
 
         dll.addLast(4);
         dll.addLast(5);
+
+      // dll.removeFirst();
 
         dll.printDll();
         
