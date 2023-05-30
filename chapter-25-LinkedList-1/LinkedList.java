@@ -264,4 +264,8 @@ public class LinkedList {
         
 
     }
+
+    public LinkedList.Node mergeSort(LinkedList.Node head2) {
+        return null;
+    }
 }
