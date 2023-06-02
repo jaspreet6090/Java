@@ -9,7 +9,6 @@ public class QueuesArray {
         size = n;
         rear = -1;
         }
-
    
         public static boolean isEmpty(){
             return rear == -1;
@@ -47,7 +46,9 @@ public class QueuesArray {
             return arr[0];
         }
         }
-
+//circular queue using array => front = -1 & rear = -1
+// update by front = (front + 1)%size & rear = (rear + 1)%size
+//else same as above
         public static void main(String[] args) {
             Queue q = new Queue(5); //n is arr size
 
