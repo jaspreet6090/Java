@@ -1,0 +1,2 @@
+queue.peek();
+    queue.remove();
