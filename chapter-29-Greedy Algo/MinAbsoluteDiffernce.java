@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class MinAbsoluteDiffernce {
-        public static void main(String[] args) {
+        public static void main(String[] args) { //O(nlogn)
             int A[] = {4,1,8,7};
             int B[] = {2,3,5,6};
             
