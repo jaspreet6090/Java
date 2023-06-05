@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LCA {
+public class LowestCommonAncestor {
     static class Node {
         int data;
         Node left;

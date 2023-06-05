@@ -55,7 +55,7 @@ public class KthLevel{
 
     //--------------------------------------------------------------------------------------------------------------------
 
-    //Approach 2
+    // 
 
     public static void KLevel(Node root , int level , int k) {
          if(root == null){
