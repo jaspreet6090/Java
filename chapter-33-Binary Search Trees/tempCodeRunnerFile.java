@@ -1,1 +1,0 @@
- // delete(root, 6);
